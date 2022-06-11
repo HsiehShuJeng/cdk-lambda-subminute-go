@@ -1,1 +1,2 @@
 # cdk-lambda-subminute-go
+Go bindings for [cdk-lambda-subminute](https://github.com/HsiehShuJeng/cdk-lambda-subminute.git). These are automatically updated from the [cdk-lambda-subminute](https://github.com/HsiehShuJeng/cdk-lambda-subminute.git) repository - if you would like to report a bug or make a pull request, please submit it there.
