@@ -27,7 +27,7 @@ $ cdk --init language typescript
 $ yarn add cdk-lambda-subminute
 ```
 
-```typescript
+```go
 class TypescriptStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
