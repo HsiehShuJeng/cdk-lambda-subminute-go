@@ -61,6 +61,9 @@ func (j *jsiiProxy_LambdaSubminute) StateMachineArn() *string {
 func NewLambdaSubminute(parent constructs.Construct, name *string, props *LambdaSubminuteProps) LambdaSubminute {
 	_init_.Initialize()
 
+	if err := validateNewLambdaSubminuteParameters(parent, name, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LambdaSubminute{}
 
 	_jsii_.Create(
@@ -102,6 +105,9 @@ func NewLambdaSubminute_Override(l LambdaSubminute, parent constructs.Construct,
 func LambdaSubminute_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateLambdaSubminute_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

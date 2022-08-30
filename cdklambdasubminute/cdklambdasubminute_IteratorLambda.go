@@ -49,6 +49,9 @@ func (j *jsiiProxy_IteratorLambda) Node() constructs.Node {
 func NewIteratorLambda(scope constructs.Construct, name *string, props *IteratorLambdaProps) IteratorLambda {
 	_init_.Initialize()
 
+	if err := validateNewIteratorLambdaParameters(scope, name, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IteratorLambda{}
 
 	_jsii_.Create(
@@ -90,6 +93,9 @@ func NewIteratorLambda_Override(i IteratorLambda, scope constructs.Construct, na
 func IteratorLambda_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateIteratorLambda_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

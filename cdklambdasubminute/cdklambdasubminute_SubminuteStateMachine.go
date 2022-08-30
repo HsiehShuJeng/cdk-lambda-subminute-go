@@ -48,6 +48,9 @@ func (j *jsiiProxy_SubminuteStateMachine) StateMachine() awsstepfunctions.StateM
 func NewSubminuteStateMachine(scope constructs.Construct, id *string, props *SubminuteStateMachineProps) SubminuteStateMachine {
 	_init_.Initialize()
 
+	if err := validateNewSubminuteStateMachineParameters(scope, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SubminuteStateMachine{}
 
 	_jsii_.Create(
@@ -89,6 +92,9 @@ func NewSubminuteStateMachine_Override(s SubminuteStateMachine, scope constructs
 func SubminuteStateMachine_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSubminuteStateMachine_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
