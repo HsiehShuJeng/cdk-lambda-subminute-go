@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 // A construct for deploying a Lambda function that can be invoked every time unit less than one minute.
 package cdklambdasubminute
@@ -12,7 +11,7 @@ import (
 	"github.com/aws/constructs-go/constructs/v10"
 )
 
-func validateSubminuteStateMachine_IsConstructParameters(x interface{}) error {
+func validateLambdaSubminute_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -20,13 +19,13 @@ func validateSubminuteStateMachine_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateNewSubminuteStateMachineParameters(scope constructs.Construct, id *string, props *SubminuteStateMachineProps) error {
-	if scope == nil {
-		return fmt.Errorf("parameter scope is required, but nil was provided")
+func validateNewLambdaSubminuteParameters(parent constructs.Construct, name *string, props *LambdaSubminuteProps) error {
+	if parent == nil {
+		return fmt.Errorf("parameter parent is required, but nil was provided")
 	}
 
-	if id == nil {
-		return fmt.Errorf("parameter id is required, but nil was provided")
+	if name == nil {
+		return fmt.Errorf("parameter name is required, but nil was provided")
 	}
 
 	if props == nil {
