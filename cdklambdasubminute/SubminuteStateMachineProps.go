@@ -6,8 +6,12 @@ import (
 
 type SubminuteStateMachineProps struct {
 	// How many times you intent to execute in a minute.
+	// Default: 6.
+	//
 	Frequency *float64 `field:"required" json:"frequency" yaml:"frequency"`
 	// Seconds for an interval, the product of `frequency` and `intervalTime` should be approximagely 1 minute.
+	// Default: 10.
+	//
 	IntervalTime *float64 `field:"required" json:"intervalTime" yaml:"intervalTime"`
 	// the iterator Lambda function for the target Lambda function.
 	IteratorFunction awslambda.IFunction `field:"required" json:"iteratorFunction" yaml:"iteratorFunction"`
